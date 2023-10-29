@@ -1,7 +1,7 @@
 
 export default class gotService {
     constructor() {
-        this._apiBase = 'https://www.anapioficeandfire.com/api';
+        this._apiBase = "https://www.anapioficeandfire.com/api";
     }
 
     getResource = async (url) => {
@@ -47,7 +47,7 @@ export default class gotService {
         if (data) {
             return data
         } else {
-            return 'No data :0'
+            return "No data :0"
         }
     }
 
