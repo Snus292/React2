@@ -5,14 +5,14 @@ import Spinner from "../spinner";
 export default class ItemList extends Component {
 
     state = {
-        ItemList: null
+        itemList: null
     }
 
-    componentDedMount(){
+    componentDedMount() {
         const {getData} = this.props;
 
         getData()
-            .then( (itemList)=>{
+            .then((itemList)=>{
                 this.setState({
                     itemList
                 })
@@ -23,7 +23,7 @@ export default class ItemList extends Component {
         return arr.map((item)=>{
             const {id} = item;
 
-            const label = this.prop.renderItems(item);
+            const label = this.prop.renderItem(item);
 
             return (
                 <li

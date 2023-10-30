@@ -10,9 +10,7 @@ const Field = ({item, field, label}) => {
     )
 }
 
-export {
-    Field
-};
+export {Field};
 
 export default class ItemDetails extends Component {
 
@@ -63,5 +61,4 @@ export default class ItemDetails extends Component {
             </div>
         );
     }
-
 }
